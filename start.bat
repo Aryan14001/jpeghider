@@ -45,7 +45,6 @@ goto saver
 :saving
 cls
 echo comming soon
-
 pause
 goto saver
 :texthr
