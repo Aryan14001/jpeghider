@@ -1,0 +1,6 @@
+f = open('p.jpg', 'rb')
+t = open("opj.jpg", "wb")
+content = f.read()
+offset = content.index(bytes.fromhex('FFD9'))
+f.seek(offset + 2)
+t.write(f.read())
